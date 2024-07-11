@@ -1,0 +1,74 @@
+/* h1{
+    color: red;
+} */
+
+
+/* Universal Selector */
+/* 
+*{
+    color: purple;
+} */
+
+/* element selector */
+
+/* h1{
+    color: red;
+}
+
+span{
+    color: blue;
+} */
+
+/* descendent Selector */
+
+/* div h1{
+    color:aqua
+} */
+
+div > h1{ 
+    /* color: aqua; Keeping on hold  */
+}
+
+
+/* 
+/* Next Sibling Selector */
+/* p+span{
+    color: red;
+}  */
+
+/* General Sibling Selector */
+/* p~span{
+    color: blue;
+} */
+
+/* h1:hover{
+    background-color: red;
+} */
+/* 
+span:nth-child(2n+1){
+    color: red;
+} */
+/* 
+h1::first-letter{
+    color: red;
+} */
+
+
+/* 
+h1::first-line{
+    color: blue;
+} */
+
+/* div:hover p::after{
+    content: " There";
+}
+
+div:hover p::before{
+    content: "Hi, ";
+} */
+
+/* class selector */
+
+span.hello{
+    color:blue;
+}
