@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 100px;
+            height: 100px;
+            background: red;
+            top: 40px;
+            left: 50px;
+            position: relative;
+        }
+
+
+        .child{
+            width: 50px;
+            height: 50px;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+    </style>
+</head>
+
+<!-- position absolute will always take position wrt nearest 
+relative parent -->
+
+<body>
+    
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </div>
+      
+</body>
+</html>
