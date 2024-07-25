@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let name = "Amit kumar verma"; // Global Scope
+
+        // function scopeTest(){
+        //     console.log(name);
+        // }
+
+        // scopeTest();
+
+        // console.log(name);
+
+        // for(var i=1; i<=5; i++){
+        //     console.log("Name is: " +name);
+        // }
+
+        // {
+        //     console.log(name);
+        // }
+
+        // console.log(i);
+
+
+        // function scopeTest(){
+        //     const name = "Amit kumar verma";
+        //     console.log(name);
+        // }
+
+        // for(var i=1; i<=5; i++){
+        //     const name = "Amit kumar verma";
+        //     console.log("Name is: " +name);
+        // }
+
+        // {
+        //     const name = "Amit kumar verma";
+        //     console.log("Name is: " +name);
+        // }
+        // scopeTest();
+
+        // console.log(name);
+        // var name = "Amit"; // declaration and initialization both will be hoisted at top
+
+        // console.log(name);
+        // let name = "Amit";
+
+        // console.log(name);
+        // const name = "Amit";
+
+        // scopeTest();
+
+        // function scopeTest(){
+        //     const name = "Amit kumar verma";
+        //     console.log(name);
+        // }
+
+        //   let scopeTest =  function (){
+        //         const name = "Amit kumar verma";
+        //         console.log(name);
+        //     }
+
+        // let scopeTest = () => {
+        //     const name = "Amit kumar verma";
+        //     console.log(name);
+        // }
+
+        // var name="Amit";
+        // var name = "Mohit";
+        // var name = "Geeta";
+        // console.log(name);
+
+        function functionScopeExample() {
+            var functionScopedVar = "I am function scoped";
+            if (true) {
+                var functionScopedVar = "I am still function scoped";
+                console.log(functionScopedVar); // I am still function scoped
+            }
+            console.log(functionScopedVar); // I am still function scoped
+        }
+
+        functionScopeExample();
+    </script>
+</body>
+
+</html>
