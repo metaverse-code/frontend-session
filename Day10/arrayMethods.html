@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        td,
+        tr {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // document.write("<table>");
+        //     for(let row=1; row<=10; row++){
+        //         document.write("<tr>");
+        //             for(let col= row; col<=100; col=col+10){
+        //                 document.write("<td>"+col+"</td>");
+        //             }
+        //         document.write("</tr>");
+        //     }
+        // document.write("</table>");
+
+        // let arr = [10,2,30,"Amit","Geeta"];
+        // console.log(arr); 
+
+        // delete arr[0];
+        // console.log(arr);
+
+        // arr[0] = "Monu";
+        // console.log(arr);
+
+
+        // let arr1 = ["Amit", "Abel", "Geeta",];
+        // let arr1 = "Amit";
+        // let arr1 = true;
+
+        // let arr2 = ["Zebra", "Yell", "Ball"];
+        // let arr = [1,55,6,50]; // X
+
+        // console.log(arr);
+
+        // let sortedArr = arr.sort();
+        // arr.sort();
+
+        // arr.reverse();
+        //   let newVal =  arr.pop();
+        // console.log(newVal);
+        // arr.push("Amit");
+        // arr.push("Geeta");
+
+        // arr.shift("New Elem");
+        // arr.unshift("Ammy", "Sarla");
+
+        // console.log(arr1.concat(arr2));
+        // console.log(typeof arr1.join());
+        // console.log(arr1.join(" "));
+
+        //   let result= Array.isArray(arr1);
+        //   console.log(result)
+
+        // let arr1 = ["Amit", "Abel", "Geeta","Hello","There"];
+        // console.log(arr1);
+        // arr1.splice(2);
+        // arr1.splice(2,2);
+    //    let newArr =  arr1.slice(2);
+    //    let newArr =  arr1.slice(2,4);
+    //    let newArr =  arr1.slice(-5,7);
+        // console.log(newArr);
+
+
+        let arr = [9,5,96,58];
+
+        // arr.some(x=>console.log(x));
+        // const returnedVal = arr.some(function(arrElem){
+        //    return arrElem>50;
+        // });
+
+        // const returnedVal = arr.every(function(arrElem){
+        //    return arrElem>50;
+        // });
+
+        // let returnedVal = arr.filter(function(arrElem){
+        //     // return arrElem>50;
+        //     return arrElem>50;
+        // })
+
+        let returnedVal = arr.map(function(arrElem, index,ar){
+            debugger
+            // return arrElem+50;
+            // return ar;
+        })
+        
+        console.log(returnedVal);
+        // console.log(arr);
+    </script>
+</body>
+
+</html>
