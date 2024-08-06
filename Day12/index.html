@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is title element</title>
+
+    <style>
+        .hello{
+            color: red;
+        }
+
+        .new{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is first heading</h1>
+    <span>This is first span element</span>
+    <div id="parent">
+        <h1 id="heading_1" class="hello"><span>Hello I am Rajnish</span></h1>
+        <h1 id="heading_2" class="hello">Hello There</h1>
+        <span>This is span element</span>
+        <p class="hello test new">This is paragraph element</p>
+
+        <p>This has no id no class</p>
+        <h3 id="heading_3">This is heading level 3 element</h3>
+    </div>
+    <script>
+
+        // console.log(document.getElementById('heading_1'));
+        // console.log(document);
+        // console.log(document.head);
+        // console.log(document.body);
+        // console.log(document.title);
+
+        // console.log(document.getElementsByClassName('hello'));
+        // console.log(document.getElementsByClassName('new'));
+
+        // console.log(document.getElementsByTagName('span'));
+
+        // console.log(document.querySelector('#heading_1'));
+        // console.log(document.querySelector('.hello'));
+        // console.log(document.querySelector('h1'));
+
+        // console.log(document.querySelectorAll('#heading_1'));
+        // console.log(document.querySelectorAll('.hello'));
+        // console.log(document.querySelectorAll('h1'));
+        // console.log(document.querySelectorAll('span'));
+
+
+        // document.getElementById('parent').textContent
+        // console.log(document.getElementById('parent').innerHTML);
+        // console.log(document.getElementById('heading_1').innerHTML);
+        // console.log(document.getElementById('heading_1').textContent);
+
+        
+        setTimeout(() => {
+            // document.getElementById('heading_1').textContent= "I am Monu";
+            // document.getElementById('heading_1').innerHTML= "<font color='blue'>Hey I am new line</font>";
+
+            // document.getElementById('heading_1').style.backgroundColor="blue"
+            // document.getElementById('heading_1').style.fontSize="40px"
+            // document.getElementById('heading_1').style.fontSize="40px"
+
+            // document.getElementById("heading_1").style.cssText = "display: block; position: absolute; font-size:37px";
+
+        }, 3000);
+
+    </script>
+</body>
+</html>
