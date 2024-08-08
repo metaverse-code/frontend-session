@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        #parent {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #child {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- <div id="box" onClick="()=>handleClick('Amit')"></div> react js -->
+    <!-- <div id="box" onClick="handleClick"></div> react js -->
+
+
+    <!-- <div id="box" onclick="alert('Hello')"></div> -->
+    <!-- <div id="box" onclick="handleClick(event);"></div> -->
+
+
+    <!-- <div id="parent" onclick="console.log('Parent  Clicked')">
+        <div class="child" onclick="console.log('Child Clicked')"></div>
+    </div> -->
+    
+    <!-- <div id="parent" >
+        <div id="child"></div>
+    </div> -->
+
+    <input type="text" id="mytextbox">
+
+    <a href="http://google.com" id="child">Go to Google</a>
+    <!-- <ul>
+    <li>Cup</li>
+    <li>Tea</li>
+    <li>Mouse</li>
+    <li>Laptop</li>
+    <li>Mobile</li>
+</ul> -->
+
+<form action="">
+    <input type="texttext" name="" id="">
+    <input type="texttext" name="" id="">
+    <input type="texttext" name="" id="">
+
+
+    <input type="submit" value="submit">
+</form>
+
+    <script>
+        // function handleClick(e){
+        //     console.log(e);
+        //     // alert("Div Clicked");
+        // }
+
+        // document.getElementById("box").onclick = function handleClick(){
+        //     alert("Div Clicked");
+        // }
+
+        // document.getElementById("box").addEventListener('click', function(){
+        //       console.log("You clicked");
+        // });
+
+
+        // document.getElementById("parent").addEventListener('click', function(){
+        //       console.log("You clicked parent");
+        // },true);
+        
+        // document.getElementById("child").addEventListener('click', function(){
+        //       console.log("You clicked child");
+        // },true);
+        
+        
+        //  document.getElementById("parent").addEventListener('click', function(){
+        //       console.log("You clicked parent");
+        // });
+        
+        document.getElementById("child").addEventListener('click', function(event){
+            console.log("You clicked child");
+            event.stopPropagation();
+            event.preventDefault();
+        });
+        
+
+        // let element = document.getElementById('mytextbox');
+        // element.addEventListener("keydown", function (event) {
+
+        //     console.log(event.target.value);
+        //     // console.log("Key pressed: " + event.key);
+        //     // console.log("Key pressed: " + event.keyCode);
+        // });
+
+
+        // element.addEventListener("keyup", function (event) {
+        //     console.log(event.target.value);
+        //     // console.log("Key pressed: " + event.key);
+        //     // console.log("Key pressed: " + event.keyCode);
+        // });
+    </script>
+</body>
+
+</html>
