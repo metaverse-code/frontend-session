@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* border: 1px solid black; */
+            /* transition: all 0.9s ease-in; */
+        }
+
+        /* .box:hover{
+            background-color: blue;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="box" style="border: 5px solid blue;"> -->
+    <div class="parent">
+        <div class="box"></div>
+    </div>
+
+    <script>
+        let elem = document.getElementsByClassName('box')[0];
+
+        elem.addEventListener('mouseover', function (e) {
+            // console.log()
+            // e.target.style.backgroundColor="blue";
+            // e.target.style.borderStyle="solid";
+            // e.target.style.borderWidth="5px";
+            // e.target.style.borderColor="black";
+
+
+            // elem.setAttribute("amit", "1"); 
+            console.log(e);
+            // e.target.setAttribute("style", "border: 5px solid blue;background:url(https://th.bing.com/th/id/OIP.vggFhcDaZAZ0BLI1MKgUzgHaD-?rs=1&pid=ImgDetMain);background-size:cover");
+        });
+
+
+        // elem.removeEventListener('mouseover', function () {
+        //     console.log("hover even removed")
+        // })
+
+        elem.addEventListener('click', function (e) {
+            debugger
+            console.log(e.target);
+        });
+        // console.log(elem);
+
+        // elem.on('mouseover', function)
+
+        document.createElement('h1');
+
+        // insertbefore and insertafter
+
+    </script>
+</body>
+
+</html>
