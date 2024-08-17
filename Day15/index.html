@@ -1,0 +1,35 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JSON</title>
+    </head>
+    <body>
+
+        <script>
+            let user={
+                name:"Amit",
+                age:24,
+                city:'Delhi'
+            }
+
+            let str = "Ram is playing";
+
+            str= str.replace("Ram", "Mohan");
+            console.log(str);
+
+
+            console.log(user);
+            
+           let jsonVal= JSON.stringify(user); // Stringify converts obj to json string
+           console.log(jsonVal);
+           
+           jsonVal = jsonVal.replace("Amit", "Sumit");
+           console.log(jsonVal);
+
+            let parsedJSON = JSON.parse(jsonVal);
+            console.log(parsedJSON)
+        </script>
+    </body>
+    </html>

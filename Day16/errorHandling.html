@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("Hello there 1");
+        console.log("Hello there 2");
+        // try {
+        //     setTimeout(() => {
+        //         try {
+        //             console.log(name());
+        //         } catch (error) {
+        //             console.error("Error in name fcn, please check");
+        //         }
+        //     }, 1000);
+        // } catch (error) {
+        //     // console.error("Error in name fcn, please check");
+        //     // console.error(error.name);
+        //     // console.error(error.message);
+        //     // console.error(error.stack);
+        // }
+
+        console.log("Hello there 3");
+        console.log("Hello there 4");
+
+
+
+        // console.log("Hello there ");
+        // setTimeout(()=>{
+        //     console.log("Hello there 1");
+        // },6000); 
+
+        // setTimeout(()=>{
+        //     console.log("Hello there 2");
+        //     console.log(name());
+        // },2000);
+        // console.log("Hello there ends");
+
+
+        function checkAge(age) {
+            if (age < 18) {
+                throw new Error("Age must be 18 or above.");
+            }
+            return "Access granted";
+        }
+
+        try {
+            checkAge(16);
+        } catch (error) {
+            console.log(error);
+        }
+    </script>
+</body>
+
+</html>
