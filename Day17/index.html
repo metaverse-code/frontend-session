@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //  {
+    //     const name="Amit";
+    //     name "Amit" // wrong case
+    //  }
+
+        // let name = 2;
+        // let name2 ='2';
+
+        // console.log(name===name2);
+        
+        let obj ={
+            name: "Amit",
+            age:"20"
+        }
+
+        let obj2 = obj;
+
+        console.log(obj);
+        console.log(obj2);
+
+        // obj2.name="Golu"
+        delete obj2.name
+
+        console.log(obj);
+
+        // https://www.geeksforgeeks.org/pass-by-value-and-pass-by-reference-in-javascript/
+        
+        // let obj2={
+        //     name: "Amit",
+        //     age:"20" 
+        // }
+
+
+
+
+    //   console.log(obj===obj2);
+
+      let names = ["Amit", "Golu", "Monu"];
+      let names2 = ["Amit", "Golu", "Monu"];
+
+    //   console.log(names===names2);
+    
+    // let name="Amit";
+    // let str ="Hey"+" "+name+" "+"there, I am learning";
+    // console.log(str + ' ' + name);
+
+
+    // let str = `Hey ${name}, I am learning";`
+    // console.log(str);
+
+        // function name(arguments){
+        //     console.log(arguments);
+        // }
+        
+        const name = (arguments)=>{
+            console.log(arguments);
+        }
+
+        name("Amit","Monu",67,true);
+    
+
+        let objNew={
+            name: "Amit New",
+            age:"20",
+
+            cities:{
+                city1:"Noida",
+                city2:"City 2"
+            }
+        }
+        // const {name:newName,age,cities} = objNew
+        // // console.log(objNew.name);
+        // console.log(newName, age,cities);
+        
+let namesNew = ["Hello","Amit","Monu","New entry 2"]; 
+let namesNew2 = [...namesNew]; 
+
+
+// rest operators / spread oprators
+
+console.log(namesNew2);
+
+
+    </script>
+</body>
+</html>
