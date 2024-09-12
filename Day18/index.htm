@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function sum() {
+
+            let sum = 0;
+            // console.log(arguments);
+            for (const element of arguments) {
+                // console.log(element);
+                // sum= sum+element;
+                // sum+=element;
+            }
+
+            // console.log(num1+num2);
+            console.log(sum);
+        }
+
+        // sum(4,5,7,8,10);
+        // sum("Amit", 4,5,7,8,10);
+
+
+
+        function spreadOpr(name, city, ...marks) { // rest operator will always come to end of the parameters
+            console.log(name, city, marks);
+
+            let sum = 0
+            for (const element of marks) {
+                sum= sum+element;
+                sum+=element;
+            }
+
+            console.log(sum);
+
+        }
+
+        // spreadOpr("Amit","Delhi", 4,5,7,10);
+        // spreadOpr("Amit","Delhi","Patna");
+        // spreadOpr("Amit", 4,5,7,10);
+
+        let nums = [4, 5, 7, 10, 100, 33];
+
+        // spreadOpr("Amit", "Patna", ...nums);
+        // spreadOpr("Amit", "Patna", 4, 5, 7, 10, 100,33);
+
+
+        // trickey ques
+
+        let arr1= [10,20,30,40,50,30,4,50,60];
+        let arr2= [...arr1];
+
+        // console.log(arr1 == arr);
+        
+        // for (const element of arr1) {
+        //     arr2.push(element);
+        // }
+
+        // console.log(arr2);
+
+
+        let [a,b,c,,e]=arr1;
+        console.log(a,b,c,e)
+
+    </script>
+</body>
+
+</html>
