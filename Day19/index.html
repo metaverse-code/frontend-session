@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+        <script>
+            class Hello{
+                constructor(name, year){
+                    this.name= name;
+                    this.year= year; 
+                }
+
+                method1(){
+                     // code lines / logic 
+                }
+
+                method2(){
+                    // code lines / logic 
+                }
+
+                method3(){
+                    const date = new Date();
+                    console.log(date);
+                    console.log(date.getFullYear());
+                }
+            }
+
+            const student1 = new Hello("Amit", 2024);
+            const student2 = new Hello("Geeta", 2020);
+
+            // whenever we create object of a class then constructor method executed  
+            // constructor is used to initialze object properties.
+
+
+            console.log(student1.name);
+            console.log(student2.name);
+
+            console.log(student1.method3());
+        </script>
+</body>
+</html>
