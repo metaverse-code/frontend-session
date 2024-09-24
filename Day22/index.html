@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let arr = new Array();
+        // let obj = new Object();
+        // console.log("first")
+
+        // setTimeout(() => {
+        //     console.log("After 1 second")
+        // }, 1000);
+        // let promise = new Promise(function(){})
+        let promise1 = new Promise((resolve, reject) => {
+            console.log("Something inside this promise");
+            // resolve(5);
+            setTimeout(() => {
+                console.log("This promise is fullfilled..!!");
+                resolve("this is resolved value")
+            }, 3000);
+            // resolve(true);
+            // resolve(['val1','val2']);
+            //     resolve([
+            //     {
+            //         train1:"Name of train 1",
+            //         trainNumber:12334
+            //     },
+            //     {
+            //         train1:"Name of train 2",
+            //         trainNumber:4324234
+            //     }
+            // ]);
+
+            // reject("Some custom error message");
+            // reject(new Error("Something went wrong..!!"))
+        })
+
+
+        // let promise2= new Promise((resolve, reject) => {
+        //     console.log("Something inside this promise 2");
+        //     // resolve(5);
+        //     setTimeout(() => {
+        //         console.log("I am rejected");
+        //         reject(false)
+        //     }, 4000);
+            
+        // })
+
+
+        // console.log(promise1);
+        // console.log(promise2);
+        // console.log("Second");
+
+                function resolveCustomFcn(val){
+                    console.log(val);
+                }
+                promise1.then(resolveCustomFcn);
+
+        promise1.then(val=>console.log(val));
+
+        // promise2.then(value=>console.log(value));
+        // promise2.catch(value=>console.log(value));
+        // promise1.catch(err=>console.log(err));
+    </script>
+</body>
+
+</html>
