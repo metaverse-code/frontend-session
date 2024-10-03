@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>        
+                // post    put        get  delete
+        // fetch - Insert | Update | Read | Delete
+
+        // fetch(file/URL); -> Promise
+        // fetch(file/URL).then();
+
+        // fetch('file/url').then(function(response){
+        //     return response.data;
+        // }).then(function(result){
+        //     console.log(result)
+        // }).catch(function(err){
+        //     console.log(err);
+        // });
+
+
+        // fetch('content/hello.txt').then(function(response){
+        //     // console.log(response.text());
+        //     return response.text();
+        // }).then(function(res){
+        //     // console.log(res);
+        //     document.write(res)
+        // }).catch(function(err){
+        //     console.log(err);
+        // }); 
+        
+        
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then(function(response){
+            // console.log(response.text());
+            return response.json();
+        })
+        .then(function(result){
+            console.log(result);
+
+           for(let x in result){
+                console.log(result[x].email);
+                // document.write(result[x].email+"<br/>");
+                document.write(`${result[x].email} - ${result[x].name} <br/>`);
+           }
+            // document.write(result);
+        })
+        .catch(function(err){
+            console.log(err);
+            // console.log('Something went wrong');
+            // document.write('Something went wrong')
+        });
+    </script>
+</body>
+</html>
