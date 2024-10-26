@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // class hello{
+        //     constructor(){
+        //         this.name="Amit"
+        //     }
+
+
+
+
+        // }
+
+
+        // class car(){
+        //     constructor(){
+        //         this.name="Toyota"
+        //     }
+
+
+        //     console.log(this.name)
+        // }
+
+
+
+        let obj1 = {
+            name: 'Amit',
+            city: 'Delhi',
+            // useDetails: function(){
+            //     console.log(this.name+ " from " + this.city);
+            // }
+
+            // useDetails: ()=>{
+            //     console.log(this.name+ " from " + this.city);
+            // }
+
+
+            // useDetails: function(){
+            //     console.log(obj1.name+ " from " + obj1.city);
+            // }
+        }
+
+        const useDetails = function (age='0', course='Default') {
+            // console.log(this.name + " from " + this.city + " age: "+age +" "+ course);
+            const result = this.name + " from " + this.city + " age: "+age +" "+ course;
+            return result;
+        }
+
+        let obj2 = {
+            name: 'Sumit',
+            city: 'Nagpur',
+        }
+
+        let obj3 = {
+            name: 'Neha',
+            city: 'Mumbai',
+        }
+
+
+        // useDetails();
+        // SYN.
+
+        // FunctionName.call 
+        // obj1.useDetails.call(obj2);
+        // obj1.useDetails.call(obj3);
+
+        // useDetails.call(obj1, '20', 'BBA');
+        // useDetails.apply(obj1, ['20', 'BBA']);
+        // useDetails.call(obj2);
+        // useDetails.call(obj3);
+
+        // obj2.useDetails();
+
+
+        let functionCopy = useDetails.bind(obj1);
+        // console.log(functionCopy)
+        console.log(functionCopy())
+    </script>
+</body>
+
+</html>
